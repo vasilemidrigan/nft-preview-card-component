@@ -1,0 +1,90 @@
+/* Variables */
+:root {
+  /* Colors */
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan-color: hsl(178, 100%, 50%);
+  /* Neutral */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  color: var(--soft-blue);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+hr {
+  margin: 10px;
+  border: 1px solid var(--very-dark-blue-line);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h1,
+span {
+  color: var(--white-color);
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: var(--very-dark-blue-card-bg);
+}
+.wrapper > div {
+  margin: 10px;
+}
+/* Image */
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Content */
+.content > div {
+  margin-top: 20px;
+}
+/* Left */
+.left {
+  float: left;
+  color: var(--cyan-color);
+}
+/* Right Section*/
+.right {
+  float: right;
+}
+/* Author  */
+.author {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.author img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
