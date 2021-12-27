@@ -30,12 +30,10 @@ body {
   padding: 20px;
   background-color: var(--very-dark-blue-main-bg);
 }
-
 hr {
   margin: 10px;
   border: 1px solid var(--very-dark-blue-line);
 }
-
 h1 {
   margin-bottom: 15px;
 }
@@ -44,12 +42,10 @@ span:hover {
   color: var(--cyan-color);
   cursor: pointer;
 }
-
 h1,
 span {
   color: var(--white-color);
 }
-
 /* Wrapper */
 .wrapper {
   display: flex;
@@ -83,8 +79,18 @@ span {
   top: 40%;
   left: 40%;
 }
+.hover-bg {
+  background: hsla(178, 100%, 50%, 0);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
 /* All images included in .image */
-.image img:hover {
+.image:hover {
   cursor: pointer;
 }
 /* Content */
@@ -111,4 +117,7 @@ span {
   height: 30px;
   border: 1px solid white;
   border-radius: 50%;
+}
+.hidden {
+  display: none;
 }
